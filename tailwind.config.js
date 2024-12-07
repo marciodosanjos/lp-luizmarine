@@ -6,10 +6,18 @@ module.exports = {
   ],
   theme: {
     colors: {
+      primary: "#2C3E50", // Substitua pelo valor da cor que você deseja
+      secondary: "rgba(101, 86, 255, 0.20)",
       transparent: "transparent",
-      current: "currentColor",
+      hover: "#6556FF",
       white: "#ffffff",
       black: "#000000",
+      blue: "#2C3E50", // Azul Escuro (cor principal)
+      green: "#16A085", // Verde Musgo (destaques e botões)
+      gray: "#ECF0F1", // Cinza Claro (fundo)
+      orange: "#F39C12", // Laranja Suave (links e realces)
+      "text-gray": "#34495E", // Cinza Escuro (texto principal)
+      "light-gray": "#7F8C8D", // Cinza Médio (texto secundário)
       Blueviolet: "#6556FF",
       semiblueviolet: "rgba(101, 86, 255, 0.15)",
       midnightblue: "#222C44",

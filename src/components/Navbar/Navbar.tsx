@@ -14,11 +14,10 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "Home", href: "#/", current: true },
-  { name: "Courses", href: "#courses", current: false },
-  { name: "Mentor", href: "#mentor", current: false },
-  { name: "Group", href: "/", current: false },
-  { name: "Testimonial", href: "#testimonial", current: false },
+  //  { name: "Home", href: "#/", current: true },
+  { name: "Cursos", href: "#courses", current: false },
+  { name: "Depoimentos", href: "#mentor", current: false },
+  { name: "Sobre mim", href: "#testimonial", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -61,16 +60,7 @@ const Navbar = () => {
               {/* LOGO */}
 
               <div className="flex flex-shrink-0 items-center">
-                <img
-                  className="block h-12 w-40 lg:hidden"
-                  src={"/assets/logo/logo.svg"}
-                  alt="dsign-logo"
-                />
-                <img
-                  className="hidden h-full w-full lg:block"
-                  src={"/assets/logo/logo.svg"}
-                  alt="dsign-logo"
-                />
+                <span className="font-bold text-primary">Marine Cursos</span>
               </div>
 
               {/* LINKS */}
@@ -87,7 +77,7 @@ const Navbar = () => {
                         className={classNames(
                           item.href === currentLink
                             ? "underline-links"
-                            : "text-slategray",
+                            : "text-blue",
                           "px-3 py-4 text-lg font-normal opacity-75 hover:opacity-100"
                         )}
                         aria-current={item.href ? "page" : undefined}
